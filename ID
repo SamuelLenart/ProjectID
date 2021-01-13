@@ -1,8 +1,16 @@
 package sk.kosickaakademia.rodnecislo;
 
+import java.time.LocalDate;
 import java.util.Calendar;
 
 public class ID {
+    private String id;
+    private int day;
+    private int month;
+    private int year;
+    private LocalDate date;
+    private int age;
+
     public boolean checkId(String Id){
         if(Id.length()<9||Id.length()>11)
         return false;
@@ -28,7 +36,7 @@ public class ID {
         System.out.println(num);
 
         if(num%11!=0) {
-            System.out.println("Error, personal id is not equal 11");
+            System.out.println("Error, personal id is not divisible by 11");
             return false;
 
         }
@@ -49,8 +57,24 @@ public class ID {
 
         return true;
     }
-    public static void main(String[] args) {
-        ID person = new ID();
-        System.out.println(person.checkId("976231/1240"));
+
+    public void Age(){
+        LocalDate dateTime = LocalDate.now();
+        System.out.println(dateTime);
+        int dayNow = dateTime.getDayOfMonth();
+        int monthNow = dateTime.getMonthValue();
+        int yearNow = dateTime.getYear();
+
+        if(monthNow < month){
+            age = yearNow-year-1;
+            System.out.println("Si stary: " + age);
+        } else if(monthNow == month && dayNow < day){
+            age = yearNow-year-1;
+            System.out.println("Si stary: " + age);
+        }else{
+            age = yearNow-year;
+            System.out.println("Si stary: " + age);
+        }
+
     }
 }
