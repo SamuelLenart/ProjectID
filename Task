@@ -1,0 +1,35 @@
+package sk.kosickaakademia.rodnecislo;
+
+public class Task {
+
+    public int suc(int a, int b)
+    {
+        return a+b;
+    }
+
+    public boolean isPrimeNumber(int m){
+        if(m<=1)
+            return false;
+        for(int i=2;i<Math.sqrt(m);i++){
+            if(m%i==0)
+                return false;
+        }
+        return true;
+    }
+
+    public boolean isRectangularTriangle(int a, int b, int c) {
+        if(a<=0 || b<=0 || c<=0)
+            return false;
+        if(a*a+b*b==c*c || a*a+c*c==b*b || b*b+c*c==a*a)
+            return true;
+        else
+            return false;
+    }
+    public String revers(String text){
+        String chain = "";
+        for(int i = text.length()-1; i >= 0; i--){
+            chain = chain + text.charAt(i);
+        }
+        return chain;
+    }
+}
