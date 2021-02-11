@@ -1,7 +1,7 @@
 <application>
   <component name="FindSettings">
-    <option name="customScope" />
-    <option name="defaultScopeName" />
-    <option name="SEARCH_SCOPE" />
+    <option name="customScope" value="Project 'chat2021'" />
+    <option name="defaultScopeName" value="Project 'chat2021'" />
+    <option name="SEARCH_SCOPE" value="Project 'chat2021'" />
   </component>
 </application>
