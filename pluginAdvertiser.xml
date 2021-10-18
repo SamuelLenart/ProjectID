@@ -107,6 +107,11 @@
                       <FeaturePluginData displayName="TestNG" pluginName="TestNG" pluginId="TestNG-J" bundled="true" />
                     </value>
                   </entry>
+                  <entry key="TomcatRunner-By-Camtwo">
+                    <value>
+                      <FeaturePluginData displayName="Tomcat Runner" pluginName="Tomcat runner" pluginId="camtwoTomcatRunner" />
+                    </value>
+                  </entry>
                   <entry key="XSLT">
                     <value>
                       <FeaturePluginData displayName="XSLT" pluginName="XPathView + XSLT" pluginId="XPathView" bundled="true" />
